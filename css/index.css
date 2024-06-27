@@ -158,3 +158,40 @@ a {
 a:hover {
     color: rgb(239, 202, 80);
 }
+
+#menu {
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+#submenu {
+    border-top: solid 3px rgb(239, 202, 80);
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    top: 58px;
+}
+
+#submenu a {
+    color: black;
+    font-weight: 100;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#submenu a:hover {
+    background-color: #ddd;
+}
+
+#menu:hover #submenu {
+    display: block;
+}
