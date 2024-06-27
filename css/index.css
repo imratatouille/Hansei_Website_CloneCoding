@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
-body,
 html {
     height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
 }
 
 .header {
@@ -22,7 +31,13 @@ html {
 
 /* ------------------------------------ */
 
+#logoCont {
+    display: flex;
+    align-items: center;
+}
+
 #navCont {
+    width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -60,4 +75,86 @@ html {
     background-color: white;
     width: 100px;
     height: 32px;
+}
+
+#zoom {
+    font-weight: 900;
+    background-color: rgb(148, 148, 148);
+}
+
+#zoomIn {
+    border-left: dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 26px;
+    height: 18px;
+}
+
+#zoomOut {
+    border-right: dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 26px;
+    height: 18px;
+}
+
+#iDontKnow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 26px;
+    height: 18px;
+}
+
+#categoryCont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 70px;
+}
+
+#category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 71.91vw;
+    font-size: small;
+    font-weight: 600;
+}
+
+.slider {
+    width: 1024px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 1024px;
+    height: 600px;
+    object-fit: cover;
+    border: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(239, 202, 80);
 }
