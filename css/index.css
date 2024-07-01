@@ -31,6 +31,10 @@ body {
 
 /* ------------------------------------ */
 
+.siteMap {
+    color: rgba(216, 216, 216, 1);
+}
+
 #logoCont {
     display: flex;
     align-items: center;
@@ -155,7 +159,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+#menu a:hover {
     color: rgb(239, 202, 80);
 }
 
